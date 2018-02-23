@@ -1,8 +1,15 @@
 # Create-custom-logfile-and-Zip-old-log-files-exceeding-size-limit
 #Create Custom log files and zip if exceeding size limit Using Zip Archive Utility.
 
-Usage : create new CustomLogController object and call preparelogs() function from any function in your controller you want to create log for
+Usage : 
+Import these files in your Controller
       
+        use App\Controller\LoggingController;
+        use App\Controller\CustomLogController;
+  
+  
+Use this code in your function
+
         $customLog =  new CustomLogController();    // Create Object of CustomLogController
         $customLog-> prepareLogs();                 // create zipfile if logfile size limit exceeds 
 
