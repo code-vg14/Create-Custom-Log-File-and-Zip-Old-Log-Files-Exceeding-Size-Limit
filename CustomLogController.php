@@ -12,7 +12,6 @@ use Cake\Routing\Router;
 
 class CustomLogController extends AppController
 {
-
     function beforeFilter(Event $event)
     {
       parent::beforeFilter($event);
