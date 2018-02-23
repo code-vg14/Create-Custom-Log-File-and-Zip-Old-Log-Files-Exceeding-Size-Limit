@@ -1,4 +1,3 @@
-# Create-custom-logfile-and-Zip-old-log-files-exceeding-size-limit
 # Create Custom log files and zip existing one if exceeds size limit - Using Zip Archive Utility.
 
 Usage : 
