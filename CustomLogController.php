@@ -5,7 +5,6 @@ namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Core\App;
-use App\Controller\LoggingController;
 use Cake\Core\Exception\Exception;
 use ZipArchive;
 use Cake\Routing\Router;
@@ -13,23 +12,6 @@ use Cake\Routing\Router;
 
 class CustomLogController extends AppController
 {
-
-  private $log;
-  private $logfilename;
-
-   public function getLog() {
-      return $this->log;
-    }
-    public function setLog($log) {
-      $this->log= $log;
-    }
-
-    public function getLogfilename() {
-      return $this->logfilename;
-    }
-    public function setLogfilename($logfilename) {
-      $this->logfilename= $logfilename;
-    }
 
     function beforeFilter(Event $event)
     {
@@ -58,12 +40,8 @@ class CustomLogController extends AppController
             }Catch(Esception $e){
               print_r($e);
             }
-
           }
         }
-
-        $log = new LoggingController();                                                         // Create LoggingController  Object                                                      
-        $log->lfile($logfilename);                                                              // Set new log file name
 
       }
 	
