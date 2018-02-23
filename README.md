@@ -1,4 +1,4 @@
-# Create-and-Zip-oversized-logs-files-in-cakePHP
+# Create-custom-logfile-and-Zip-old-log-files-exceeding-size-limit
 #Create Custom log files and zip if exceeding size limit Using Zip Archive Utility.
 
 Usage : create new CustomLogController object and call preparelogs() function from any function in your controller you want to create log for
