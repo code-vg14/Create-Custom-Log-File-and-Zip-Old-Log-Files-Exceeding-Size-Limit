@@ -11,7 +11,7 @@ use ZipArchive;
 use Cake\Routing\Router;
 
 
-class UsersSalesforceIntegrationController extends AppController
+class CustomLogController extends AppController
 {
 
   private $log;
